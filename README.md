@@ -20,7 +20,7 @@ This is a very WIP project, and is not yet feature complete.  If you want to imp
   - Save images
     ```sh
     python -m aadinternals recon domain.example.com -i /path/to/save/images
-    shasum .imgs/*|awk '!seen[$1]++ {print $2}' # check images
+    shasum /path/to/save/images/*|awk '!seen[$1]++ {print $2}' # check images
     ```
   - Use JSON output
     ```json
