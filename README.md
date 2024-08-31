@@ -5,33 +5,24 @@ aadinternals is a Pythonic implementation of the "AADInternals" tool.
 This is a very WIP project, and is not yet feature complete.  If you want to implement a feature, please feel free to submit a PR.
 
 - Installation
-
     ```sh
     pip install git+https://github.com/rand-tech/aadinternals.git
     ```
-
 - Cheat Sheet
   - Domain
-
     ```sh
     python -m aadinternals recon domain.example.com
     ```
-
   - Email
-
     ```sh
     python -m aadinternals recon sombody@domain.example.com
     ```
-
   - Save images
-
     ```sh
     python -m aadinternals recon domain.example.com -i /path/to/save/images
     shasum .imgs/*|awk '!seen[$1]++ {print $2}' # check images
     ```
-
   - Use JSON output
-
     ```json
     $ python -m aadinternals recon domain.example.com -t json 2>/dev/null
     {
